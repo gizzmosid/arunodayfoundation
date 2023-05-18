@@ -3,9 +3,9 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div class="p-8">
       
-<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+<nav class="bg-white dark:bg-gray-900 fixed w-full z-10 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <a href="https://flowbite.com/" class="flex items-center">
       <img src={require("./images/logo.png")} class="h-20 mr-5" alt="Flowbite Logo"/>
@@ -54,7 +54,7 @@ function App() {
             </a> 
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src={require("./images/logo1.png")} alt="mockup"/>
+            <img src={require("./images/Untitled design (2).png")} alt="mockup"/>
         </div>                
     </div>
 </section>
@@ -110,10 +110,10 @@ function App() {
 
 
 
-<section class="bg-white dark:bg-gray-900" id='aboutus'>
+<section class="bg-white dark:bg-gray-900 p-8" id='aboutus'>
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">About us</h2>
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white p-8">About us</h2>
             <p class="mb-4">Tapovani Mata Sant Subhadra mataji of Gangori Ashram, Uttarkashi, has been inspiring her followers to take up promotion of ‘Shiksha, Swasthya and Sanskar’ particularly in the remote villages of Uttarkashi which has been her ‘karma bhoomi’. Two of her followers, Gajendra Singh of Juguldi village, and Narendra Shetty of Mumbai, decided to put their resources together in this service to humanity & service to the nation. They formed Arunoday Foundation on 25th of Feb 2016. The mission of the foundation is to provide quality education and healthcare to the rural children & their family.</p>
 
 <p class="mb-4">A beginning was made taking a tough challenge. A pre-primary school was opened at a remote mountain village called Juguldi in Uttarkashi, with no transport or other amenities, 5 km away from the nearest tar road. The inauguration was done on 5th May 2016 by Mrs. Jayendri Rana, President of Nagar Palika Parishad, Uttarkashi, in the presence of several supporters from outside and parents from the village. Several local dignitaries, including MLA, Mr. Gopal Singh Rawatji have extended their support and good wishes to this noble effort. 
@@ -143,13 +143,24 @@ function App() {
     </div>
 </section>
 
-<section class="bg-white dark:bg-gray-900 " id="trustees">
+<section class="bg-white dark:bg-gray-900 p-8 " id="trustees">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
       <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Trustees</h2>
+
+
+      
+
+
+
+
+
+
+
+
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white p-8">Our Trustees</h2>
          
       </div> 
-      <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+      <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-3">
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
                   <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src={require("./images/pasted image 0 (2).png")} alt="Bonnie Avatar"/>
@@ -201,7 +212,7 @@ function App() {
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Members</h2>
          
       </div> 
-      <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+      <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-4">
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
                   <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src={require("./images/pasted image 0 (5).png")} alt="Bonnie Avatar"/>
@@ -243,20 +254,20 @@ function App() {
                   <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                       <a href="#">Mahesh Singh Panwar</a>
                   </h3>
-                  
+                  <div id="gallery"></div>
               </div>
           </div>  
       </div>  
   </div>
 </section>
-</section>
+</section >
 
+<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center p-8"   >Gallery</h2>
 
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 p-8" >
 
-
-
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="gallery">
-    <div>
+         
+    <div class="p-5">
         <img class="h-auto max-w-full rounded-lg" src={require("./images/fwdindependencedayimagesofarunodayschooljuguldi/IMG_20200214_091629.jpg")} alt=""/>
     </div>
     <div>
@@ -294,10 +305,10 @@ function App() {
     </div>
 </div>
 
-<section class="bg-white dark:bg-gray-900" id="donate">
-  <div class="py-8 px-6 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+<section class="bg-white dark:bg-gray-900 p-8" id="donate">
+  <div class="py-8 px-6 mx-auto max-w-screen-xl sm:py-16 lg:px-6 p-8">
       <div class="max-w-screen-md mb-9 lg:mb-16">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Donate Us
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white p-8">Donate Us
 </h2>
           <p class="mb-3 text-gray-500 dark:text-gray-400">To add further classes the school needs additional building, classroom furniture and importantly more good teachers. Construction of a building of 3 floors with a total of thirteen rooms is planned over a period of 3 years with an estimated cost of about Rs. One crore, including class room furniture & teaching aids. That should take care of the requirements of the next 10 years, teaching the children up to 10th standard. Hence we appeal to benevolent donors to contribute to this nation building cause. The Trust is now more than 6 years old and has received income tax exemptions under 12A and 80G for trust income as well as donor’s donations.</p>
           <p class="mb-3 text-gray-500 dark:text-gray-400">Individual donors are requested to donate any amount that they feel comfortable to contribute. What comes from the heart is our most prized gift and it will be used in various expenses of the school. A list of Donors will be displayed in the school.
@@ -440,29 +451,20 @@ function App() {
 
 
 
-<footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
-    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/" class="hover:underline">Arunoday Foundation™</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
-        </li>
-        <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
-        </li>
-        <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline">Contact</a>
-        </li>
-    </ul>
+
+
+
+<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+    <div>
+        <hr class="my-4 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-dark-800">© 2023 <a href="/" class="hover:underline">Arunodhay Foundation™</a>. All Rights Reserved.</span>
     </div>
 </footer>
-
      </div>
   );
 }
 
 export default App;
+
+
+
