@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
@@ -19,20 +19,40 @@ function App() {
       </button>
   </div>
   <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-      <li>
-        <a href="/" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
-      </li>
-      <li>
-        <a href="#aboutus" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Us</a>
-      </li>
-      <li>
-        <a href="#trustees" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Trustees</a>
-      </li>
-      <li>
-        <a href="#gallery" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Gallery</a>
-      </li>
-    </ul>
+
+    
+<nav class="bg-white border-gray-200 dark:bg-gray-900">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        
+        <li>
+          <a href="/" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+        </li>
+        <li>
+          <a href="#aboutus" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
+        </li>
+        <li>
+          <a href="#trustees" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Our Trustees</a>
+        </li>
+        <li>
+          <a href="#gallery" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gallery</a>
+        </li>
+        <li>
+          <a href="#contact" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+    
   </div>
   </div>
 </nav>
@@ -48,7 +68,7 @@ function App() {
                 Get started
                 <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
-            <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+            <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800" id='active'>
                 
                 Contact Us
             </a> 
@@ -62,27 +82,92 @@ function App() {
 
 
 <div id="indicators-carousel" class="relative w-full" data-carousel="static">
+
+
+
+<div id="gallery" class="relative w-full" data-carousel="slide">
+    
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src={require("./images/1.png")} class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Img1"/>
+        </div>
+        
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src={require("./images/2.png")} class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Img2"/>
+        </div>
+        
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src={require("./images/3.png")} class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Img3"/>
+        </div>
+        
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src={require("./images/4.png")} class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Img4"/>
+        </div>
+        
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src={require("./images/5.png")} class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Img5"/>
+        </div>
+    </div>
+    
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+
+
+
+
+
+
+{/*
    
-    <div class="relative h-76 overflow-hidden rounded-lg md:h-96">
+    <div class="relative h-86 overflow-hidden rounded-lg md:h-96">
   
         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            <img src={require("./images/pasted image 0 (1).jpg")} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="img1"/>
+            <img src={require("./images/pasted image 0 (1).jpg")} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="img1"  id="blur"/>
+            <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-dark -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">
+Classroom activity
+</span>
+
         </div>
    
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src={require("./images/pasted image 0 (2).jpg")} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="img2"/>
+            <img src={require("./images/pasted image 0 (2).jpg")} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-0 left-1/2" alt="img2"  id="blur"/>
+            <span class="absolute top-1/2 left-1/2 text-2xl font-bold text-dark -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">Independence day Flag Hoisting ceremony
+
+
+</span>
         </div>
 
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src={require("./images/pasted image 0 (3).jpg")}class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="img3"/>
+            <img src={require("./images/pasted image 0 (3).jpg")}class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="img3"  id="blur"/>
+            <span class="absolute top-1/2 left-1/2 text-2xl font-bold text-dark -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">Classroom activity
+</span>
         </div>
 
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src={require("./images/pasted image 0 (4).jpg")} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="img4"/>
+            <img src={require("./images/pasted image 0 (4).jpg")} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="img4"  id="blur"/>
+            <span class="absolute top-1/2 left-1/2 text-2xl font-bold text-dark -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">Flag Hoisting ceremony on a snowy Republic Day
+
+</span>
         </div>
  
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src={require("./images/pasted image 0.jpg")} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="img5"/>
+            <img src={require("./images/pasted image 0.jpg")} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="img5" id="blur"/>
+            <span class="absolute top-1/2 left-1/2 text-2xl font-bold text-dark -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">
+            School Assembly
+</span>
         </div>
     </div>
 
@@ -105,8 +190,12 @@ function App() {
             <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             <span class="sr-only">Next</span>
         </span>
-    </button>
+  </button>*/}
 </div>
+
+
+
+
 
 
 
@@ -120,7 +209,7 @@ function App() {
 .</p>
         </div>
         <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src={require("./images/pasted image 0.png")} alt="office content 1"/>
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src={require("./images/pasted image 0 (6).jpg")} alt="office content 1"/>
             <img class="mt-4 w-full lg:mt-10 rounded-lg" src={require("./images/pasted image 0 (11).jpg")} alt="office content 2"/>
         </div>
     </div>
@@ -308,10 +397,11 @@ function App() {
 <section class="bg-white dark:bg-gray-900 p-8" id="donate">
   <div class="py-8 px-6 mx-auto max-w-screen-xl sm:py-16 lg:px-6 p-8">
       <div class="max-w-screen-md mb-9 lg:mb-16">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white p-8">Donate Us
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white p-8">Appeal for Funds
 </h2>
           <p class="mb-3 text-gray-500 dark:text-gray-400">To add further classes the school needs additional building, classroom furniture and importantly more good teachers. Construction of a building of 3 floors with a total of thirteen rooms is planned over a period of 3 years with an estimated cost of about Rs. One crore, including class room furniture & teaching aids. That should take care of the requirements of the next 10 years, teaching the children up to 10th standard. Hence we appeal to benevolent donors to contribute to this nation building cause. The Trust is now more than 6 years old and has received income tax exemptions under 12A and 80G for trust income as well as donor’s donations.</p>
-          <p class="mb-3 text-gray-500 dark:text-gray-400">Individual donors are requested to donate any amount that they feel comfortable to contribute. What comes from the heart is our most prized gift and it will be used in various expenses of the school. A list of Donors will be displayed in the school.
+          <p class="mb-3 text-gray-500 dark:text-gray-400">Individual donors are requested to donate any amount that they feel comfortable to contribute. What comes from the heart is our most prized gift and it will be used in various expenses of the school. A list of Donors will be displayed in the school.</p>
+          <p class="mb-3 text-gray-500 dark:text-gray-400">Individual donors who wish to make larger contributions, corporate donors and CSR funds are requested to consider the following:
 </p>
           
       </div>
@@ -337,7 +427,7 @@ function App() {
 
     </li>
     <li>
-    One large classroom furniture & teaching aids – Rs. 2,00,000/-
+    One small classroom furniture & teaching aids – Rs. 1,50,000/-
 
     </li>
 </ul>
@@ -460,6 +550,11 @@ function App() {
         <span class="block text-sm text-gray-500 sm:text-center dark:text-dark-800">© 2023 <a href="/" class="hover:underline">Arunodhay Foundation™</a>. All Rights Reserved.</span>
     </div>
 </footer>
+
+
+
+
+
      </div>
   );
 }

@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+#menu li.active  a#active { 
+  text-decoration-color:rgb(30, 13, 155);
+   
+}
+
+#blur:hover {
+  opacity: 0.2;
+}
