@@ -7,7 +7,7 @@ function App() {
       
 <nav class="bg-white dark:bg-gray-900 fixed w-full z-10 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="https://flowbite.com/" class="flex items-center">
+  <a href="/" class="flex items-center">
       <img src={require("./images/logo.png")} class="h-20 mr-5" alt="Flowbite Logo"/>
       <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Arunoday Foundation </span>
   </a>
